@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -25,14 +26,21 @@
 .content{
     display: flex;
     background-color: black;
-    min-height: 30px;
+    min-height: 54px;
     justify-content: space-between;
     padding: 10px 80px 10px 80px;
     align-items: center;
 }
+.separador{
+    display: flex;
+    background-color: white;
+    min-height: 13px;
+}
 .iconos-container a{
-    padding: 0px 10px 0 10px;
+    padding: 0px 10px 0 20px;
     color: white;
+    font-size: 15px;
+    
 }
 .textcondiciones{
     color: white;
@@ -45,12 +53,18 @@
     font-size: 10px;
 }
 .content-barra-menu{
-    
+    min-height: 69px;
     display: flex;
     background-color:white;
-    min-height: 20px;
     justify-content: space-between;
     padding: 10px 90px 10px 90px;
+    font-size: 15px;
+}
+.content-barra-menu img{
+    width: 150px; 
+    height: auto;
+    padding: 10px 0 0 15px;
+
 }
 .menu-nav-bar a{
     display: flex;
@@ -67,13 +81,21 @@
 .menu-nav-bar ul li a{
     color: black;
     font-family: 'montserrat';
-    font-size: 15px;
-    font-weight: 500;}
+    font-size: 17px;
+    font-weight: 500;
+}
 .iniciar-sesion {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+.textoicono {
+    color: #ff0000; 
+    text-decoration: none; 
+}
+
+
+
     
 .iniciar-sesion a {
     position: relative;
@@ -85,12 +107,10 @@
     display: flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     margin-right: 30px;
-    
 }
-    
 .iconousuario .fa-user {
     margin-right: 15px;
 }
@@ -103,23 +123,130 @@
 .bolsacompras a {
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
-.text-uno-slider{
-    color:black;
-    text-align: center;
-    padding-top: 50px;
-}
-.slider--inner{
+
+.slider--inner {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    height: 1100px;
-
+    transition: transform 0.5s ease-in-out;
+    width: 300%; 
 }
-.slider-inicio{
-    overflow: hidden;
-
-}
-.slider-inner img{
+    
+.slider--inner img {
+    width: 33.33%; 
+}   
+.slider-inicio {
     width: 100%;
+    overflow: hidden; 
+}   
+.content-dos{
+    display: flex;
+    background-color: black;
+    min-height: 64px;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+    align-items: center;
+}
+.content-dos h5{
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    width: 100%; 
+}
+.slider--inner-uno {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: nowrap;
+    gap: 20px; 
+    transition: transform 0.5s ease-in-out;
+    width: auto; 
+}
+
+.slide {
+    flex: 0 0 auto; 
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.slide img {
+    border-radius: 19px;
+    width: 280px;
+    height: auto;
+    display: block;
+}
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 30px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+.content-tres {
+    background-color: #D9D9D9; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 307px; 
+}
+
+.inner-box {
+    width: 90%; 
+    min-height: 280px; 
+    background-color: transparent; 
+    border: 2px solid black; 
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    padding-left: 150px; 
+}
+
+.overlay-image {
+    position: absolute;
+    left: 0; 
+    bottom: 0; 
+    width: 700px; 
+    height: auto; 
+    z-index: 1; 
+    margin-left: 206px; 
+}
+
+.text-box {
+    text-align: center;
+    z-index: 2; 
+}
+.inner-box h2{
+    font-family: 'Mulish';
+    font-size: 45px;
+    text-align: center;
+    margin-left: 250px; 
 }
