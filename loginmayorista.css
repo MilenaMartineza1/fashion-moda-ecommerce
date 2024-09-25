@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.textuno{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color:white;
+    font-family: 'montserrat';
+    font-size: 12px;
+}
+.textuno h5{
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    display: flex;
+    background-color: black;
+    min-height: 54px;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+    align-items: center;
+}
+.separador{
+    display: flex;
+    background-color: white;
+    min-height: 13px;
+}
+.iconos-container a{
+    padding: 0px 10px 0 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.textcondiciones{
+    color: white;
+    text-align: end;
+    font-family: 'montserrat';
+    font-style: italic;
+}
+.textcondiciones a h5{
+    font-weight: 200;
+    font-size: 8px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.content-barra-menu{
+    min-height: 69px;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    padding: 10px 90px 10px 90px;
+    font-size: 15px;
+}
+.content-barra-menu img{
+    width: 150px; 
+    height: auto;
+    padding: 10px 0 0 10px;
+
+}
+.menu-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav-bar ul li {
+    position: relative;
+    float: left;
+    padding: 12px;
+    padding-top: 8px;
+}
+
+.menu-nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.menu-nav-bar li a i {
+    margin-left: 8px; 
+}
+.menu-nav-bar .ofertas {
+    color: #7F0000;
+}
+
+.menu-nav-bar ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 4px; 
+    width: 220px; 
+}
+
+.menu-nav-bar ul li ul.submenu li {
+    float: none;
+    padding: 10px 20px;
+}
+
+.menu-nav-bar ul li ul.submenu li a {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav-bar ul li:hover ul.submenu {
+    display: block;
+}
+
+.menu-nav-bar ul li ul.submenu li a i {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.menu-nav-bar ul li:hover > a {
+    color: #7F0000; 
+    
+}
+.menu-nav-bar ul li ul.submenu li:hover {
+    background-color: #EEEEEE;
+
+}
+.menu-nav-bar ul li a {
+    padding: 8px 12px;
+}
+
+.menu-nav-bar ul li {
+    margin: 0 10px;
+}
+
+.iniciar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textoicono {
+    color: #ff0000; 
+    text-decoration: none; 
+} 
+.iniciar-sesion a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}  
+.iconousuario {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.iconousuario .fa-user {
+    margin-right: 10px;
+}
+.bolsacompras {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}   
+.bolsacompras a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.login-mayorista h2{
+    font-family: 'Mulish';
+    margin: 118px 118px 65px 118px;
+    text-align: center;
+    font-size: 36px;
+}
+.login-mayorista{
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-mayorista form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .nombre-usuario{
+    position: relative;
+    border-bottom: 2px solid;
+    margin: 46px 0;
+}
+.nombre-usuario input{
+    width: 100%;
+    padding: 0 5px;
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.nombre-usuario label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-150%);
+    font-size: 20px;
+    pointer-events: none;
+    font-family: 'Mulish';
+
+}
+form .contraseña{
+    position: relative;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+.contraseña input{
+    width: 100%;
+    padding: 0 5px;
+    height: 44px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contraseña label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-150%);
+    font-size: 20px;
+    pointer-events: none;
+    font-family: 'Mulish';
+}
+.login-mayorista .recordar{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background: black;
+    margin-top: 30px;
+    color: white;
+}
+.login-mayorista .continuar{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.icono-gmail-facebook {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    font-size: 10px;
+}
+
+.texto-icono-gmail, .texto-icono-facebook {
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    font-family: 'Montserrat';
+    font-size: 15px; 
+    text-decoration: none; 
+    color: #000;
+    font-weight: 500;
+}
+.texto-icono-gmail i, .texto-icono-facebook i {
+    font-size: 30px; 
+}
+
+.recordar p{
+    text-align: right;
+    text-decoration: none;
+    color: #000;
+}
+

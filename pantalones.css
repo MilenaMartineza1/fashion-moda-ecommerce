@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.textuno{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color:white;
+    font-family: 'montserrat';
+    font-size: 12px;
+}
+.textuno h5{
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    display: flex;
+    background-color: black;
+    min-height: 54px;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+    align-items: center;
+}
+.separador{
+    display: flex;
+    background-color: white;
+    min-height: 13px;
+}
+.iconos-container a{
+    padding: 0px 10px 0 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.textcondiciones{
+    color: white;
+    text-align: end;
+    font-family: 'montserrat';
+    font-style: italic;
+}
+.textcondiciones a h5{
+    font-weight: 200;
+    font-size: 8px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.content-barra-menu{
+    min-height: 69px;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    padding: 10px 90px 10px 90px;
+    font-size: 15px;
+}
+.content-barra-menu img{
+    width: 150px; 
+    height: auto;
+    padding: 10px 0 0 10px;
+
+}
+.menu-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav-bar ul li {
+    position: relative;
+    float: left;
+    padding: 12px;
+    padding-top: 8px;
+}
+
+.menu-nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.menu-nav-bar li a i {
+    margin-left: 8px; 
+}
+.menu-nav-bar .ofertas {
+    color: #7F0000;
+}
+
+.menu-nav-bar ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 4px; 
+    width: 220px; 
+}
+
+.menu-nav-bar ul li ul.submenu li {
+    float: none;
+    padding: 10px 20px;
+}
+
+.menu-nav-bar ul li ul.submenu li a {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav-bar ul li:hover ul.submenu {
+    display: block;
+}
+
+.menu-nav-bar ul li ul.submenu li a i {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.menu-nav-bar ul li:hover > a {
+    color: #7F0000; 
+    
+}
+.menu-nav-bar ul li ul.submenu li:hover {
+    background-color: #EEEEEE;
+
+}
+.menu-nav-bar ul li a {
+    padding: 8px 12px;
+}
+
+.menu-nav-bar ul li {
+    margin: 0 10px;
+}
+
+.iniciar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textoicono {
+    color: #7F0000;
+    text-decoration: none; 
+} 
+.iniciar-sesion a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}  
+.iconousuario {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.iconousuario .fa-user {
+    margin-right: 10px;
+}
+.bolsacompras {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}   
+.bolsacompras a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.texto-novedades h2{
+    font-family: 'Mulish';
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 125px;
+}
+
+.filtro-ropa{
+    margin: 108px 0 0 100px;   
+}
+.filtro-ropa h3{
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+.filtro-accesorios{
+    margin: 84px 0 0 0;   
+}
+.filtro-accesorios h3{
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+.categoria-ropa{
+    background-color: #F9F9F9;
+    width: 238px;
+    height: 295px;
+    padding: 30px;  
+    margin-right: 100px; 
+}
+.categoria-ropa ul li{
+    font-family: 'Mulish';
+    font-size: 15px;
+    margin-bottom: 15px;
+   
+}
+.categoria-ropa ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.categoria-accesorios{
+    background-color: #F9F9F9;
+    width: 238px;
+    height: 239px;
+    padding: 30px; 
+    margin-bottom: 23px;  
+}
+.categoria-accesorios ul li{
+    font-family: 'Mulish';
+    font-size: 15px;
+    margin-bottom: 15px;
+   
+}
+.categoria-accesorios ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.filtro-talla, .filtro-precio, .filtro-material, .filtro-color {
+    background-color: transparent;
+    padding: 0; 
+    margin-bottom: 30px; 
+}
+
+
+.filtro-ropa h3, .filtro-accesorios h3, .filtro-talla h3, .filtro-precio h3, .filtro-material h3, .filtro-color h3 {
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+
+.filtro-ropa ul li, .filtro-accesorios ul li {
+    font-family: 'Mulish';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.filtro-ropa ul li a, .filtro-accesorios ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+input[type="checkbox"] + label::before {
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: transparent;
+    content: "\2713"; 
+    display: inline-flex;
+    height: 8px;
+    line-height: 8px;
+    margin: 8px 8px 8px 0;
+    text-align: center;
+    width: 8px;
+}
+input[type="checkbox"]:checked + label::before{
+    border-color: #000;
+    color: #000;
+}
+.seccion-novedades label {
+    font-family: 'Mulish';
+    font-size: 12px;
+    padding-left: 5px; 
+}
+
+.filtro-talla label, .filtro-precio label, .filtro-material label, .filtro-color label {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Mulish';
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.filtro-ropa h3 {
+    font-family: 'Mulish';
+    font-size: 25px;
+    font-weight: 600;
+}
+.novedades-collection--inner-uno {
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    width: 100%;
+    justify-content: right; 
+}
+.novedades-collection--inner-uno .producto-novedad img {
+    width: 266px; 
+    height: 348px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.container-novedades-productos .producto-novedad img {
+    width: 266px; 
+    height: 348px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
+.descripcion-producto h5 {
+    margin: 0px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.descripcion-producto p {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 15px; 
+}
+.descripcion-producto {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: black;
+    font-family: 'Montserrat'; 
+    margin-top: 10px; 
+    font-weight: 400;
+}
+.color-cart{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 0;
+    padding-right: 40px;
+}
+.carro-compra .fa-solid {
+    color: transparent; 
+    -webkit-text-stroke: 1px #000; 
+    font-size: 16px; 
+    margin-top: 10px;
+}
+
+.colors {
+    justify-content: start; 
+    padding-left: 20px;
+    margin-top: 10px;
+    gap: 7px; 
+    display: flex;
+}
+
+.colors span {
+    display: inline-block; 
+    height: 12px; 
+    width: 12px; 
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    box-shadow: none;
+}
+
+.color-uno {
+    background-color: #bbb;
+}
+
+.color-dos {
+    background-color: beige;
+}
+
+.color-tres {
+    background-color: black;
+}
+
+.color-cuatro {
+    background-color: #7F0000;
+}
+
+.colors span.active {
+    outline: 1px solid black; 
+    outline-offset: 2px; 
+}
+
+.producto-novedad {
+    position: relative; 
+}
+
+.boton-compra-producto {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    margin-top: 20px;
+}
+
+.boton-compra-producto button {
+    background-color: #000; 
+    color: #fff; 
+    font-family: 'Mulish';
+    width: 145px; 
+    height: 30px; 
+    border-radius: 15px; 
+    border: none;
+    cursor: pointer; 
+}
+
+.boton-compra-producto button:hover {
+    background-color: #333; 
+}
+
+.producto-novedad img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.producto-novedad:hover .boton-compra-producto {
+    opacity: 1; 
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    margin: 80px 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+.container-novedades-productos {
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    width: 100%;
+    margin-top: 50px;
+}
+.container-novedades-productos .producto-novedad img {
+    width: 266px; 
+    height: 348px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top: 70px;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 30px;
+}
+.texto-pagina-producto h4{
+    font-family: 'Mulish';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 82px;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black; 
+    width: 500px; 
+    margin: 0 auto 120px auto; 
+  }
+  
+  .input-field {
+    flex-grow: 1; 
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.input-field::placeholder {
+    color: #000;
+
+}
+
+.subscribe-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #333; 
+}
+.pie-de-pagina{
+    background: black;
+    min-height: 300px;
+}

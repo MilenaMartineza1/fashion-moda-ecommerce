@@ -20,36 +20,62 @@
                 <h5>RECIBE <b> 50% </b> DE DESCUENTO | SUSCRÍBETE A NUESTRA TIENDA AL POR MAYOR</h5>
             </div>
             <div class="textcondiciones">
-                <h5>*APLICAN TÉRMINOS Y CONDICIONES</h5>
+                <a href="#"><h5>*APLICAN TÉRMINOS Y CONDICIONES</h5></a>
             </div>
         </div>
         <div class="content-barra-menu">
             <div class="logo-menu">
-                <img src="Imagenes/image 3.png" alt="logofashion">
+                <a href="index.html"><img src="Imagenes/image 3.png" alt="logofashion"></a>
             </div>
             <div class="menu-nav">
                 <nav class="menu-nav-bar">
                     <ul>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Mayorista</a></li>
+                        <li><a href="#">Categoria<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="novedades.html" class="categoria-submenu">Novedades<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a href="#" class="categoria-submenu">Ropa de mujer <i class="fa-solid fa-chevron-right"></i></a>
+                                    <ul>
+                                        <li><a href="camisasblusas.html" class="categoria-submenu">Camisas y blusas <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="pantalones.html" class="categoria-submenu">Pantalones y leggins <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="vestidos.html" class="categoria-submenu">Vestidos <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="buzos.html" class="categoria-submenu">Buzos <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="faldas.html" class="categoria-submenu">Faldas <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="enterizo.html" class="categoria-submenu">Enterizos <i class="fa-solid fa-chevron-right"></i></a></li>
+                                        <li><a href="shorts.html" class="categoria-submenu">Shorts <i class="fa-solid fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="categoria-submenu">Joyeria y accesorios <i class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="ofertaproductos.html" class="ofertas">Ofertas</a></li>
+                        <li><a href="#">Mayorista<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" class="categoria-submenu">Ser mayorista<i class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a href="#" class="categoria-submenu">Garantía <i class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Contacto</a></li>
 
                     </ul>
                 </nav>
             </div>
             <div class="iniciar-sesion">
-    <div class="iconousuario">
-        <a href="#" aria-label="usuario" class="textoicono"><i class="fa-regular fa-user"></i> Iniciar sesión</a>
-    </div>
-    <div class="bolsacompras">
-        <a href="#" aria-label="bolsacompra"><i class="fa-solid fa-bag-shopping"></i></a>
-    </div>
-</div>
-
-            
+                <div class="iconousuario">
+                    <a href="loginmayorista.html" aria-label="usuario" class="textoicono"><i class="fa-regular fa-user"></i> Iniciar sesión</a>
+                </div>
+                <div class="bolsacompras">
+                    <a href="#" aria-label="bolsacompra"><i class="fa-solid fa-bag-shopping"></i></a>
+                </div>
+            </div>
         </div>
         <div class="slider-inicio">
+            <div class="overlay">
+                <h1>La mejor colección para ti</h1>
+                <p>Porque todas merecemos cosas únicas</p>
+                <a href="novedades.html">
+                    <button>Comprar ahora</button>
+                </a>
+            </div>
             <div class="slider--inner">
             <img src="Imagenes/charming-woman-jacket-light-trousers-holding-phone-outside-woman-with-short-hair-eyeglasses-with-black-handbag-posing-outdoors.jpg">
             <img src="Imagenes/elderly-businesswoman-coat-outside-cafe.jpg">
@@ -92,11 +118,121 @@
                 <img src="Imagenes/foto-estudio-atractiva-mujer-europea-rubia-tierna-alegre-elegante-vestido-plateado-brillante-toque-c 1.png" alt="Descripción de la imagen" class="overlay-image">
                 <h2>Conoce los productos <br> destacados que tenemos <br> para ti</h2>
             </div>
-            
-
         </div>
-    
+        <div class="new-collection">
+            <h2>Nueva colección</h2>
+            <div class="container-new-collection">
+                <div class="new-collection--inner-uno">
+                    <div class="collection"><img src="Imagenes/f6aecef65e334b207e9a6d641d4f2a83.jpg" alt="Image 1">
+                        <div class="descripcion-producto">
+                            <h5>Collar dorado</h5>
+                            <p>$ 80.000</p>
+                        </div>
+                        <div class="colors">
+                            <span class="color-uno" onclick="currentSlide(1)"></span>
+                            <span class="color-dos" onclick="currentSlide(2)"></span>
+                            <span class="color-tres" onclick="currentSlide(3)"></span>
+                            <span class="color-cuatro" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="collection"><img src="Imagenes/young-woman-white-sweater-standing-white-wall-high-quality-photo.jpg" alt="Image 2">
+                        <div class="descripcion-producto">
+                            <h5>Buzo blanco</h5>
+                            <p>$ 120.000</p>
+                        </div>
+                        <div class="colors">
+                            <span class="color-uno" onclick="currentSlide(1)"></span>
+                            <span class="color-dos" onclick="currentSlide(2)"></span>
+                            <span class="color-tres" onclick="currentSlide(3)"></span>
+                            <span class="color-cuatro" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                    <div class="collection"><img src="Imagenes/4d214f07c9a404ca9d2ab23733bc9903.jpg" alt="Image 3">
+                        <div class="descripcion-producto">
+                            <h5>Gafas blancas</h5>
+                            <p>$ 50.000</p>
+                        </div>
+                        <div class="colors">
+                            <span class="color-uno" onclick="currentSlide(1)"></span>
+                            <span class="color-dos" onclick="currentSlide(2)"></span>
+                            <span class="color-tres" onclick="currentSlide(3)"></span>
+                            <span class="color-cuatro" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                    <div class="collection"><img src="Imagenes/64fa2a8fc4a27846af7309f776895131.jpg" alt="Image 4">
+                        <div class="descripcion-producto">
+                            <h5>Enterizo negro</h5>
+                            <p>$ 180.000</p>
+                        </div>
+                        <div class="colors">
+                            <span class="color-uno" onclick="currentSlide(1)"></span>
+                            <span class="color-dos" onclick="currentSlide(2)"></span>
+                            <span class="color-tres" onclick="currentSlide(3)"></span>
+                            <span class="color-cuatro" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+        </div>
+        <div class="section-mayoreo">
+            <div class="section-text-mayoreo">
+                <h2>¿Al detal o al <br> por mayor? <br>
+                    ¡Tú decides!
+                </h2>
+        
+                <p>
+                    Adaptamos nuestras ofertas a tu preferencia, <br> 
+                    garantizando calidad y buen precio. ¡Elige lo <br> 
+                    mejor para tu negocio!
+                </p>
+                <input type="submit" class="btn-mayoreo" value="Comprar ahora">
+            </div>
+            <img src="Imagenes/picture-handsome-caucasian-woman-with-long-dark-wavy-hair-white-shirt-black-pants-heels-posing-camera.jpg" alt="Mujer posando">
+        </div>
+        <div class="section-pedido">
+            <img src="Imagenes/blonde-woman-straw-hat-standing-near-wall-with-barefoot.jpg" alt="Mujer posando">
+            <div class="section-text-pedido">
+                <h2>Encuentra tu <br> pedido aquí</h2>
+                <p>
+                    Adaptamos nuestras ofertas a tu preferencia, <br> 
+                    garantizando calidad y buen precio. ¡Elige lo <br> 
+                    mejor para tu negocio!
+                </p>
+                <input type="submit" class="btn-pedido" value="Comprar ahora">
+            </div>
+        </div>
+        <div class="iconos-finales">
+            <div class="icono-seguro">
+                <img src="Imagenes/proteger.png">
+                <p>Compra <br> 100% segura</p>
+            </div>
+            <div class="icono-envio">
+                <img src="Imagenes/enviado.png">
+                <p>Envío gratis <br>
+                    $ 150.000 +</p>
+            </div>
+            <div class="icono-caja">
+                <img src="Imagenes/caja.png">
+                <p>Envío a todo el <br> país</p>
+            </div>
+            <div class="icono-pago">
+                <img src="Imagenes/billetera.png">
+                <p>Diferentes <br> métodos de pago</p>
+            </div>
+        </div>
+        
     </header>
 
+    <footer class="pie-de-pagina">
+
+    </footer>
 </body>
 </html>
