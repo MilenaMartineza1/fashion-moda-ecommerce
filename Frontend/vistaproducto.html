@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionModa</title>
-    <link rel="stylesheet" href="EstiloInicio.css">
+    <link rel="stylesheet" href="vistaproducto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    
 </head>
 <body>
     <header>
@@ -68,55 +67,57 @@
                 </div>
             </div>
         </div>
-        <div class="slider-inicio">
-            <div class="overlay">
-                <h1>La mejor colección para ti</h1>
-                <p>Porque todas merecemos cosas únicas</p>
-                <a href="novedades.html">
-                    <button>Comprar ahora</button>
-                </a>
+        <div class="vista-productos">
+            <div class="fotos-productos">
+                <div class="slider--uno">
+                    <img src="Imagenes/Rectangle 108.png">
+                </div>
+                <div class="slider--dos">
+                    <img src="Imagenes/Rectangle 108.png">
+                    <img src="Imagenes/Rectangle 108.png">
+                    <img src="Imagenes/Rectangle 108.png">
+                    <img src="Imagenes/Rectangle 108.png">
+                </div>
             </div>
-            <div class="slider--inner">
-            <img src="Imagenes/charming-woman-jacket-light-trousers-holding-phone-outside-woman-with-short-hair-eyeglasses-with-black-handbag-posing-outdoors.jpg">
-            <img src="Imagenes/elderly-businesswoman-coat-outside-cafe.jpg">
-            <img src="Imagenes/gorgeous-bruneete-woman-stylish-autumn-outfit-back-hat-posing-street-old-european-city.jpg">
-            </div>   
-        </div>
-        <div class="separador"> </div>
-        <div class="content-dos">
-            <div class="content-dos-text-uno">
-                <h5>Envío gratis por compras superiores a $ 300.000</h5>
-            </div>
-            <div class="content-dos-text-dos">
-                <h5>Grandes descuentos al por mayor</h5>
-            </div>
-            <div class="content-dos-text-tres">
-                <h5>Descuentos del 20% por compras superiores a $ 150.00 al detal</h5>
-            </div>
-            <div class="content-dos-text-cuatro">
-                <h5>Grandes descuentos</h5>
-            </div>
-        </div>
-        <div class="separador"> </div>
-        <div class="slider-container">
-            <div class="slider--inner-uno">
-                <div class="slide"><img src="Imagenes/vertical-portrait-young-sexy-model-stylish-clothes-sitting-white-box-looking-up-high-quality-photo.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="Imagenes/beautiful-fashion-woman-posing-with-elegant-suit (1).jpg" alt="Image 2"></div>
-                <div class="slide"><img src="Imagenes/beautiful-fashion-woman-posing-with-elegant-suit.jpg" alt="Image 3"></div>
-                <div class="slide"><img src="Imagenes/beautiful-young-woman-poses-camera-pink-dress-isolated-white-space.jpg" alt="Image 4"></div>
-                
-            </div>
-        </div>
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-        </div>
-        <div class="content-tres">
-            <div class="inner-box">
-                <img src="Imagenes/foto-estudio-atractiva-mujer-europea-rubia-tierna-alegre-elegante-vestido-plateado-brillante-toque-c 1.png" alt="Descripción de la imagen" class="overlay-image">
-                <h2>Conoce los productos <br> destacados que tenemos <br> para ti</h2>
+            <div class="descripcion-vista-producto">
+                <div class="titulo-descripcion">
+                    <h3>Set elegante de cuadros</h3>
+                    <p>$ 200.000</p>
+                </div>
+                <div class="color-vista-producto">
+                    <div class="elegir-color">
+                        <h4>Elegir color</h4>
+                    </div>
+                    <div class="colors-talla">
+                        <span class="color-talla-uno" onclick="currentSlide(this)" aria-label="Seleccionar color gris"></span>
+                        <span class="color-talla-dos" onclick="currentSlide(this)" aria-label="Seleccionar color blanco"></span>
+                        <span class="color-talla-tres" onclick="currentSlide(this)" aria-label="Seleccionar color negro"></span>
+                        <span class="color-talla-cuatro" onclick="currentSlide(this)" aria-label="Seleccionar color rojo oscuro"></span>
+                    </div>
+                </div>
+                <div class="talla-vista-producto">
+                    <div class="elegir-talla">
+                        <h4>Elegir talla</h4>
+                    </div>
+                    <div class="tallas">
+                        <button class="talla-boton" data-talla="S" onclick="seleccionarTalla(this)">S</button>
+                        <button class="talla-boton" data-talla="M" onclick="seleccionarTalla(this)">M</button>
+                        <button class="talla-boton" data-talla="L" onclick="seleccionarTalla(this)">L</button>
+                        <button class="talla-boton" data-talla="XL" onclick="seleccionarTalla(this)">XL</button>
+                    </div>
+                    <input type="hidden" id="tallaSeleccionada" name="tallaSeleccionada">
+
+                </div>
+                <div class="cantidad-vista-producto">
+                    <div class="elegir-cantidad">
+                        <h4>Cantidad</h4>
+                    </div>
+                    <div class="cantidad-producto">
+                        <button class="cantidad-boton">-</button>
+                        <input type="text" value="1" class="cantidad-input">
+                        <button class="cantidad-boton">+</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="new-collection">
@@ -180,59 +181,23 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
-            
         </div>
-        <div class="section-mayoreo">
-            <div class="section-text-mayoreo">
-                <h2>¿Al detal o al <br> por mayor? <br>
-                    ¡Tú decides!
-                </h2>
-        
-                <p>
-                    Adaptamos nuestras ofertas a tu preferencia, <br> 
-                    garantizando calidad y buen precio. ¡Elige lo <br> 
-                    mejor para tu negocio!
-                </p>
-                <input type="submit" class="btn-mayoreo" value="Comprar ahora">
+        <div class="informacion">
+            <div class="texto-pagina-producto">
+                <h4>Únete a la Exclusividad: <br>
+                    ¡Inscríbete y Descubre Moda <br>
+                    Femenina de Alta Clase!</h4>
             </div>
-            <img src="Imagenes/picture-handsome-caucasian-woman-with-long-dark-wavy-hair-white-shirt-black-pants-heels-posing-camera.jpg" alt="Mujer posando">
-        </div>
-        <div class="section-pedido">
-            <img src="Imagenes/blonde-woman-straw-hat-standing-near-wall-with-barefoot.jpg" alt="Mujer posando">
-            <div class="section-text-pedido">
-                <h2>Encuentra tu <br> pedido aquí</h2>
-                <p>
-                    Adaptamos nuestras ofertas a tu preferencia, <br> 
-                    garantizando calidad y buen precio. ¡Elige lo <br> 
-                    mejor para tu negocio!
-                </p>
-                <input type="submit" class="btn-pedido" value="Comprar ahora">
+            <div class="form-container">
+                <input type="text" placeholder="Correo electrónico o número de celular" class="input-field">
+                <button class="subscribe-button">Suscríbete</button>
             </div>
         </div>
-        <div class="iconos-finales">
-            <div class="icono-seguro">
-                <img src="Imagenes/proteger.png">
-                <p>Compra <br> 100% segura</p>
-            </div>
-            <div class="icono-envio">
-                <img src="Imagenes/enviado.png">
-                <p>Envío gratis <br>
-                    $ 150.000 +</p>
-            </div>
-            <div class="icono-caja">
-                <img src="Imagenes/caja.png">
-                <p>Envío a todo el <br> país</p>
-            </div>
-            <div class="icono-pago">
-                <img src="Imagenes/billetera.png">
-                <p>Diferentes <br> métodos de pago</p>
-            </div>
-        </div>
-        
     </header>
-
     <footer class="pie-de-pagina">
 
     </footer>
+    <script src="vistaproducto.js"></script>
+  
 </body>
 </html>

@@ -250,7 +250,6 @@
     display: flex;
     justify-content: flex-start; 
     margin-top: 10px; 
-
 }
 
 .slider--dos img {
@@ -264,41 +263,283 @@
 .slider--dos img:last-child {
     margin-right: 0;
 }
-.texto-producto h3{
+.descripcion-vista-producto{
+    margin-right: 350px;
+}
+.titulo-descripcion h3{
     font-family: 'Mulish';
     font-size: 36px;
     font-weight: 500;
 }
-.colors {
+.titulo-descripcion p{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.elegir-color h4{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.colors-talla {
     justify-content: start; 
-    padding-left: 20px;
     margin-top: 10px;
     gap: 7px; 
     display: flex;
 }
-.colors span {
+.colors-talla span {
     display: inline-block; 
-    height: 31px; 
-    width: 31px; 
+    height: 30px; 
+    width: 30px; 
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
     box-shadow: none;
 }
-.color-uno {
+.color-talla-uno {
     background-color: #bbb;
 }
-.color-dos {
+.color-talla-dos {
     background-color: beige;
 }
-.color-tres {
+.color-talla-tres {
     background-color: black;
 }
-.color-cuatro {
+.color-talla-cuatro {
     background-color: #7F0000;
 }
-.colors span.active {
+.colors-talla .active {
     outline: 1px solid black; 
     outline-offset: 2px; 
 }
+.elegir-talla h4{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.tallas {
+    display: flex;
+    gap: 10px;
+}
 
+.talla-boton {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.talla-boton.active {
+    outline: 2px solid white;
+    background-color: #555;
+}
+
+.talla-boton:hover {
+    background-color: #333;
+}
+
+.elegir-cantidad h4{
+    font-family: 'Mulish';
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.cantidad-producto {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    background-color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+.cantidad-boton {
+    width: 30px; 
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cantidad-input {
+    width: 120px; 
+    height: 30px;
+    text-align: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0;
+}
+.cantidad-producto button:focus,
+.cantidad-input:focus {
+    outline: none;
+}
+.new-collection h2{
+    font-size: 40px;
+    font-family: 'Mulish';
+    font-weight: 500;
+    text-align: center;
+    margin-top: 96px;
+}
+.new-collection--inner-uno {
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    width: 100%;
+    justify-content: center; 
+}
+.new-collection--inner-uno .collection img {
+    width: 266px; 
+    height: 348px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top: 70px;
+}
+.descripcion-producto {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: black;
+    font-family: 'Montserrat'; 
+    margin-top: 10px; 
+    font-weight: 400;
+}
+
+.descripcion-producto h5 {
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.descripcion-producto p {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 15px; 
+}
+.colors {
+    justify-content: first baseline;
+    padding-left: 10px;
+    margin-top: 10px;
+    gap: 5px; 
+    display: flex;
+}
+.color-uno {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+.color-dos {
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-color: #D9D9D9;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+.color-tres {
+    height: 12px;
+    width: 12px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+.color-cuatro {
+    height: 12px;
+    width: 12px;
+    background-color: #7F0000;
+    border-radius: 50%;
+    display: flex;
+    transition: background-color 0.3s ease;
+}
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 30px 0 150px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+.texto-pagina-producto h4{
+    font-family: 'Mulish';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 82px;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black; 
+    width: 500px; 
+    margin: 0 auto 120px auto; 
+  }
+  
+  .input-field {
+    flex-grow: 1; 
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    padding: 10px;
+}
+
+.input-field::placeholder {
+    color: #000;
+
+}
+.subscribe-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Mulish';
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #333; 
+}
+.pie-de-pagina{
+    background: black;
+    min-height: 300px;
+}

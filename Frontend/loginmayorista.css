@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.textuno{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color:white;
+    font-family: 'montserrat';
+    font-size: 12px;
+}
+.textuno h5{
+    font-weight: 200;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+.content{
+    display: flex;
+    background-color: black;
+    min-height: 54px;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+    align-items: center;
+}
+.separador{
+    display: flex;
+    background-color: white;
+    min-height: 13px;
+}
+.iconos-container a{
+    padding: 0px 10px 0 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+.textcondiciones{
+    color: white;
+    text-align: end;
+    font-family: 'montserrat';
+    font-style: italic;
+}
+.textcondiciones a h5{
+    font-weight: 200;
+    font-size: 8px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+.content-barra-menu{
+    min-height: 69px;
+    display: flex;
+    background-color:white;
+    justify-content: space-between;
+    padding: 10px 90px 10px 90px;
+    font-size: 15px;
+}
+.content-barra-menu img{
+    width: 150px; 
+    height: auto;
+    padding: 10px 0 0 10px;
+
+}
+.menu-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav-bar ul li {
+    position: relative;
+    float: left;
+    padding: 12px;
+    padding-top: 8px;
+}
+
+.menu-nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+.menu-nav-bar li a i {
+    margin-left: 8px; 
+}
+.menu-nav-bar .ofertas {
+    color: #7F0000;
+}
+
+.menu-nav-bar ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 4px; 
+    width: 220px; 
+}
+
+.menu-nav-bar ul li ul.submenu li {
+    float: none;
+    padding: 10px 20px;
+}
+
+.menu-nav-bar ul li ul.submenu li a {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav-bar ul li:hover ul.submenu {
+    display: block;
+}
+
+.menu-nav-bar ul li ul.submenu li a i {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.menu-nav-bar ul li:hover > a {
+    color: #7F0000; 
+    
+}
+.menu-nav-bar ul li ul.submenu li:hover {
+    background-color: #EEEEEE;
+
+}
+.menu-nav-bar ul li a {
+    padding: 8px 12px;
+}
+
+.menu-nav-bar ul li {
+    margin: 0 10px;
+}
+
+.iniciar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.textoicono {
+    color: #ff0000; 
+    text-decoration: none; 
+} 
+.iniciar-sesion a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+}  
+.iconousuario {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.iconousuario .fa-user {
+    margin-right: 10px;
+}
+.bolsacompras {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}   
+.bolsacompras a {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 500px; /* Asegura que ambos formularios tengan el mismo ancho */
+    width: 100%; /* Asegura que tome todo el espacio posible */
+}
+
+/* Estilo del encabezado */
+h2 {
+    font-family: 'Mulish';
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo de los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%; /* Asegura que el contenedor del campo tome el 100% del ancho */
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'Mulish';
+}
+.form-group input:focus {
+    outline: none; 
+    box-shadow: 0 0 5px #ddd; 
+}
+
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%; /* Asegura que los inputs ocupen el 100% del contenedor */
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Mulish';
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos para el botón */
+.form-button {
+    width: 100%; /* Asegura que el botón tenga el mismo ancho que el input */
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Mulish';
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #333;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    font-size: 16px;
+    font-family: 'Mulish';
+}
+
+.social-login a {
+    width: 400px; 
+    height: 35px;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    font-family: 'Mulish';
+}
+.gmail-login {
+    background-color: #db4437;
+}
+
+.facebook-login {
+    background-color: #3b5998;
+}
+
+.social-login a:hover {
+    opacity: 0.9;
+}
+
+.register-link, .login-link {
+    font-size: 14px;
+    margin-top: 20px;
+    font-family: 'Mulish';
+
+}
+
+.register-link a, .login-link a {
+    color: #7F0000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Mulish';
+}
+.form-group label {
+    width: 400px; 
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}

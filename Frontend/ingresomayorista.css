@@ -185,144 +185,297 @@
     align-items: center;
     font-size: 15px;
 }
-.texto-novedades h2{
-    font-family: 'Mulish';
-    color: #7F0000;
-    font-size: 45px;
-    font-weight: 300;
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
     text-align: center;
-    margin-top: 125px;
+    font-family: 'Mulish';
+
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-
-.filtro-ropa{
-    margin: 108px 0 0 100px;   
-}
-.filtro-ropa h3{
-    font-family: 'Mulish';
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 27px;
-}
-.filtro-accesorios{
-    margin: 84px 0 0 0;   
-}
-.filtro-accesorios h3{
-    font-family: 'Mulish';
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 27px;
-}
-.categoria-ropa{
-    background-color: #F9F9F9;
-    width: 238px;
-    height: 295px;
-    padding: 30px;  
-    margin-right: 100px; 
-}
-.categoria-ropa ul li{
-    font-family: 'Mulish';
-    font-size: 15px;
-    margin-bottom: 15px;
-   
-}
-.categoria-ropa ul li a{
-    text-decoration: none;
+.close:hover, .close:focus {
     color: black;
-    
-}
-.categoria-accesorios{
-    background-color: #F9F9F9;
-    width: 238px;
-    height: 239px;
-    padding: 30px; 
-    margin-bottom: 23px;  
-}
-.categoria-accesorios ul li{
-    font-family: 'Mulish';
-    font-size: 15px;
-    margin-bottom: 15px;
-   
-}
-.categoria-accesorios ul li a{
     text-decoration: none;
-    color: black;
-    
+    cursor: pointer;
 }
-.filtro-talla, .filtro-precio, .filtro-material, .filtro-color {
-    background-color: transparent;
-    padding: 0; 
-    margin-bottom: 30px; 
-}
-
-
-.filtro-ropa h3, .filtro-accesorios h3, .filtro-talla h3, .filtro-precio h3, .filtro-material h3, .filtro-color h3 {
+.btn {
+    background-color: #717171;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
     font-family: 'Mulish';
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 27px;
+
 }
 
-
-.filtro-ropa ul li, .filtro-accesorios ul li {
-    font-family: 'Mulish';
-    font-size: 15px;
-    margin-bottom: 15px;
+.btn:hover {
+    background-color: #7F0000;
+}
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; 
 }
 
-.filtro-ropa ul li a, .filtro-accesorios ul li a {
-    text-decoration: none;
-    color: black;
+.slider--inner img {
+    width: 33.33%; 
 }
 
-
-input[type="checkbox"] {
-    appearance: none;
+.slider-inicio {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
 }
 
-input[type="checkbox"] + label::before {
-    border: 1px solid #000;
-    border-radius: 2px;
-    color: transparent;
-    content: "\2713"; 
-    display: inline-flex;
-    height: 8px;
-    line-height: 8px;
-    margin: 8px 8px 8px 0;
-    text-align: center;
-    width: 8px;
-}
-input[type="checkbox"]:checked + label::before{
-    border-color: #000;
-    color: #000;
-}
-.seccion-novedades label {
-    font-family: 'Mulish';
-    font-size: 12px;
-    padding-left: 5px; 
-}
-
-.filtro-talla label, .filtro-precio label, .filtro-material label, .filtro-color label {
-    display: inline-flex;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    font-family: 'Mulish';
-    font-size: 12px;
-    margin-bottom: 12px;
+    text-align: center;
+    z-index: 1;
 }
 
-.filtro-ropa h3 {
-    font-family: 'Mulish';
-    font-size: 25px;
-    font-weight: 600;
+.overlay h1,
+.overlay p,
+.overlay button {
+    z-index: 2; 
 }
-.novedades-collection--inner-uno {
+.overlay h1 {
+    font-family: 'Mulish';
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 160px;
+}
+.overlay p {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+}
+.overlay button {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    width: 178px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background-color: black; 
+    color: white;
+}
+.slider-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 3; 
+}
+
+.dot-slider {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot-slider:hover {
+    background-color: #717171;
+}
+
+.active {
+    background-color: #333;
+}
+.content-dos {
+    background-color: black;
+    min-height: 64px;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; 
+    animation: marquee 70s linear infinite; 
+}
+
+.marquee-content h5 {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-right: 50px; 
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0); /
+    }
+    to {
+        transform: translateX(-100%); 
+    }
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.slider--inner-uno {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 2); 
+}
+
+.slide {
+    flex: 0 0 25%; 
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.slide img {
+    border-radius: 19px;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.slide {
+    position: relative; 
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.slide img {
+    border-radius: 19px;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 217px; 
+    height: 61px; 
+    line-height: 61px; 
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+    font-family: 'Mulish';
+}
+
+.slide:hover .caption {
+    opacity: 3; 
+}
+
+.slide a:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1); 
+
+}
+
+
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 30px 0 150px 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.container-novedades-productos {
     display: flex;
     align-items: center; 
     gap: 30px; 
     width: 100%;
-    justify-content: right; 
+    margin-top: 50px;
 }
-
+.container-novedades-productos .producto-novedad img {
+    width: 266px; 
+    height: 348px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top: 70px;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 30px;
+}
 .producto-novedad .descuento {
     position: absolute;
     bottom: 70px;
@@ -335,13 +488,6 @@ input[type="checkbox"]:checked + label::before{
     border-radius: 5px; 
     font-family: 'Montserrat';
 }
-
-.descuentos-precios{
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-}
 .novedades-collection--inner-uno .producto-novedad img {
     width: 266px; 
     height: 348px; 
@@ -349,13 +495,27 @@ input[type="checkbox"]:checked + label::before{
     border-radius: 20px;
     margin-top: 70px;
 }
+.producto-novedad {
+    position: relative; 
+}
+.producto-novedad img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
 
+.producto-novedad:hover .boton-compra-producto {
+    opacity: 1; 
+}
 .container-novedades-productos .producto-novedad img {
     width: 266px; 
     height: 348px; 
     object-fit: cover; 
     border-radius: 20px;
     margin-top: 70px;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 30px;
 }
 .descripcion-producto .precio-real{
     color:#7F0000;
@@ -389,6 +549,12 @@ input[type="checkbox"]:checked + label::before{
     font-family: 'Montserrat'; 
     margin-top: 10px; 
     font-weight: 400;
+}
+.descuentos-precios{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 .color-cart{
     display: flex;
@@ -442,11 +608,6 @@ input[type="checkbox"]:checked + label::before{
     outline: 1px solid black; 
     outline-offset: 2px; 
 }
-
-.producto-novedad {
-    position: relative; 
-}
-
 .boton-compra-producto {
     display: flex;
     justify-content: center;
@@ -472,104 +633,11 @@ input[type="checkbox"]:checked + label::before{
 .boton-compra-producto button:hover {
     background-color: #333; 
 }
-
+.producto-novedad:hover .boton-compra-producto {
+    opacity: 1; 
+}
 .producto-novedad img {
     width: 100%; 
     height: auto;
     display: block;
-}
-
-.producto-novedad:hover .boton-compra-producto {
-    opacity: 1; 
-}
-
-.container {
-    display: flex;
-    width: 100%;
-}
-
-.pagination {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.pagination a {
-    margin: 80px 5px;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.pagination a:hover {
-    background-color: #ddd;
-}
-.container-novedades-productos {
-    display: flex;
-    align-items: center; 
-    gap: 30px; 
-    width: 100%;
-    margin-top: 50px;
-}
-.container-novedades-productos .producto-novedad img {
-    width: 266px; 
-    height: 348px; 
-    object-fit: cover; 
-    border-radius: 20px;
-    margin-top: 70px;
-    justify-content: center; 
-    align-items: center;
-    margin-right: 30px;
-}
-.texto-pagina-producto h4{
-    font-family: 'Mulish';
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 110px;
-    margin-bottom: 82px;
-}
-.form-container {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black; 
-    width: 500px; 
-    margin: 0 auto 120px auto; 
-  }
-  
-  .input-field {
-    flex-grow: 1; 
-    border: none;
-    outline: none;
-    font-size: 18px;
-    font-family: 'Mulish';
-    font-weight: 400;
-    padding: 10px;
-}
-
-.input-field::placeholder {
-    color: #000;
-
-}
-
-.subscribe-button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-family: 'Mulish';
-    font-weight: 400;
-    cursor: pointer;
-}
-
-.subscribe-button:hover {
-    background-color: #333; 
-}
-.pie-de-pagina{
-    background: black;
-    min-height: 300px;
 }

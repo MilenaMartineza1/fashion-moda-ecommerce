@@ -106,7 +106,7 @@
     left: 0;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 1000; 
     padding: 10px 0;
     border-radius: 4px;
     width: 220px;
@@ -195,7 +195,7 @@
     justify-content: flex-start;
 }
 .textoicono {
-    color: #ff0000; 
+    color: #7F0000; 
     text-decoration: none; 
 } 
 .iniciar-sesion a {
@@ -224,8 +224,81 @@
     align-items: center;
     font-size: 15px;
 }
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Mulish';
+
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #717171;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Mulish';
+
+}
+
+.btn:hover {
+    background-color: #7F0000;
+}
+
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; 
+}
+
+.slider--inner img {
+    width: 33.33%; 
+}
+
+.slider-inicio {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+
 .overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6); 
@@ -234,8 +307,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 
+.overlay h1,
+.overlay p,
+.overlay button {
+    z-index: 2; 
+}
 .overlay h1 {
     font-family: 'Mulish';
     font-size: 70px;
@@ -244,14 +323,12 @@
     margin-bottom: 20px;
     margin-top: 160px;
 }
-
 .overlay p {
     font-family: 'Montserrat';
     font-size: 25px;
     color: white;
     margin-bottom: 40px;
 }
-
 .overlay button {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -269,63 +346,150 @@
     background-color: black; 
     color: white;
 }
-.slider--inner {
-    display: flex;
-    flex-direction: row;
-    transition: transform 0.5s ease-in-out;
-    width: 300%; 
-}  
-.slider--inner img {
-    width: 33.33%; 
-}   
-.slider-inicio {
+
+
+.slider-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
     width: 100%;
-    overflow: hidden; 
-    height: 100vh;
-}   
-.content-dos{
-    display: flex;
+    z-index: 3; 
+}
+
+.dot-slider {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot-slider:hover {
+    background-color: #717171;
+}
+
+.active {
+    background-color: #333;
+}
+
+
+.content-dos {
     background-color: black;
     min-height: 64px;
-    justify-content: space-between;
-    padding: 10px 80px 10px 80px;
+    overflow: hidden; 
+    display: flex;
     align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
 }
-.content-dos h5{
+
+.marquee {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; 
+    animation: marquee 70s linear infinite; 
+}
+
+.marquee-content h5 {
+    display: inline-block;
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    margin-right: 50px; 
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0); /
+    }
+    to {
+        transform: translateX(-100%); 
+    }
 }
 
 .slider-container {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    gap: 20px; 
-    width: 100%; 
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
 }
+
 .slider--inner-uno {
     display: flex;
-    justify-content: center; 
-    flex-wrap: nowrap;
-    gap: 20px; 
     transition: transform 0.5s ease-in-out;
-    width: auto; 
+    width: calc(100% * 2); 
 }
 
 .slide {
-    flex: 0 0 auto; 
+    flex: 0 0 25%; 
     box-sizing: border-box;
     padding: 22px;
 }
 
 .slide img {
     border-radius: 19px;
-    width: 280px;
+    width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease-in-out;
 }
+.slide {
+    position: relative; 
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    padding: 22px;
+}
+
+.slide img {
+    border-radius: 19px;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 217px; 
+    height: 61px; 
+    line-height: 61px; 
+    border-radius: 10px;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+    font-family: 'Mulish';
+}
+
+.slide:hover .caption {
+    opacity: 3; 
+}
+
+.slide a:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1); 
+
+}
+
+
 .dots {
     text-align: center;
     padding: 10px;
@@ -341,9 +505,6 @@
     transition: background-color 0.3s ease;
 }
 
-.active, .dot:hover {
-    background-color: #717171;
-}
 .content-tres {
     background-color: #D9D9D9; 
     display: flex;
@@ -385,27 +546,43 @@
     text-align: center;
     margin-left: 250px; 
 }
-.new-collection h2{
+.new-collection h2 {
     font-size: 40px;
     font-family: 'Mulish';
     font-weight: 500;
     text-align: center;
     margin-top: 96px;
 }
+
+.container-new-collection {
+    overflow: hidden; 
+    width: 100%;
+    position: relative;
+}
+
 .new-collection--inner-uno {
     display: flex;
-    align-items: center; 
-    gap: 30px; 
-    width: 100%;
-    justify-content: center; 
+    transition: transform 0.5s ease; 
 }
+
+.collection {
+    flex: 0 0 25%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 70px;
+}
+
+/* Estilo de las imágenes */
 .new-collection--inner-uno .collection img {
     width: 266px; 
     height: 348px; 
     object-fit: cover; 
     border-radius: 20px;
-    margin-top: 70px;
 }
+
+/* Descripción del producto */
 .descripcion-producto {
     display: flex;
     justify-content: space-between; 
@@ -428,6 +605,8 @@
     padding-right: 10px;
     font-size: 15px; 
 }
+
+/* Colores */
 .colors {
     justify-content: first baseline;
     padding-left: 10px;
@@ -435,41 +614,55 @@
     gap: 5px; 
     display: flex;
 }
-.color-uno {
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: flex;
-    transition: background-color 0.3s ease;
-}
-.color-dos {
-    height: 12px;
-    width: 12px;
-    background-color: white;
-    border-color: #D9D9D9;
-    border-width: 0.5px;
-    border-style: solid;
-    border-radius: 50%;
-    display: flex;
-    transition: background-color 0.3s ease;
-}
-.color-tres {
-    height: 12px;
-    width: 12px;
-    background-color: black;
-    border-radius: 50%;
-    display: flex;
-    transition: background-color 0.3s ease;
-}
+
+.color-uno,
+.color-dos,
+.color-tres,
 .color-cuatro {
     height: 12px;
     width: 12px;
-    background-color: #7F0000;
     border-radius: 50%;
     display: flex;
     transition: background-color 0.3s ease;
 }
+
+.color-uno {
+    background-color: #bbb;
+}
+
+.color-dos {
+    background-color: white;
+    border: 0.5px solid #D9D9D9;
+}
+
+.color-tres {
+    background-color: black;
+}
+
+.color-cuatro {
+    background-color: #7F0000;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #bbb; 
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: black; 
+}
+
 .section-mayoreo {
     display: flex;
     justify-content: space-between;

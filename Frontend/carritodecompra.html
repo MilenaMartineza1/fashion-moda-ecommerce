@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionModa</title>
-    <link rel="stylesheet" href="vistaproducto.css">
+    <link rel="stylesheet" href="carritodecompra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -67,38 +67,45 @@
                 </div>
             </div>
         </div>
-        <div class="vista-productos">
-            <div class="fotos-productos">
-                <div class="slider--uno">
-                    <img src="Imagenes/Rectangle 108.png">
-                </div>
-                <div class="slider--dos">
-                    <img src="Imagenes/Rectangle 108.png">
-                    <img src="Imagenes/Rectangle 108.png">
-                    <img src="Imagenes/Rectangle 108.png">
-                    <img src="Imagenes/Rectangle 108.png">
-                </div>
+        <div class="carrito-compra">
+            <h3>Carrito de compra</h3>
+            <div class="cuadro-carrito-compra">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Envio</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="producto"><img src="Imagenes/Rectangle 108.png" alt="Set elegante de cuadros" class="producto-imagen"> Set elegante de cuadros</td>
+                            <td>A calcular</td>
+                            <td>$ 200.000</td>
+                            <td>1</td>
+                            <td>$ 200.000</td>
+                        </tr>
+                        <tr class="fila-destacada">
+                            <td class="producto"><img src="Imagenes/Rectangle 108.png" alt="Set elegante de cuadros" class="producto-imagen"> Set elegante de cuadros</td>
+                            <td>A calcular</td>
+                            <td>$ 200.000</td>
+                            <td>1</td>
+                            <td>$ 200.000</td>
+                        </tr>
+                        <tr>
+                            <td class="producto"><img src="Imagenes/Rectangle 108.png" alt="Set elegante de cuadros" class="producto-imagen"> Set elegante de cuadros</td>
+                            <td>A calcular</td>
+                            <td>$ 200.000</td>
+                            <td>1</td>
+                            <td>$ 200.000</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="texto-producto">
-                <h3>Set elegante de cuadros</h3>
-                <h4>$ 200.000</h4>
-                <h4>Elige el color</h4>
-                <div class="colors">
-                        <span class="color-uno" onclick="currentSlide(1)"></span>
-                        <span class="color-dos" onclick="currentSlide(2)"></span>
-                        <span class="color-tres" onclick="currentSlide(3)"></span>
-                        <span class="color-cuatro" onclick="currentSlide(4)"></span>
-                </div>
-                <div class="talla">
-                    <h4>Elige la talla</h4>
-                    <span class="color-uno" onclick="currentSlide(1)">Xs</span>
-                    <span class="color-dos" onclick="currentSlide(2)">S</span>
-                    <span class="color-tres" onclick="currentSlide(3)">M</span>
-                    <span class="color-cuatro" onclick="currentSlide(4)">L</span>
-                </div>
-            </div>
+
         </div>
     </header>
-    
 </body>
-</html>
